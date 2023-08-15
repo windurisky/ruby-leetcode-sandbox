@@ -15,6 +15,10 @@ def is_valid(s)
   # validates matching parentheses
   queue = []
 
+  # the idea is to add the char into 1st element of queue if no matching parentheses
+  # or otherwise remove the char from the 1st element
+  # that way, when the queue is zero at the end of the loop
+  # it means the parentheses are valid.
   s.each_char do |char|
     matcher = queue.first
 
