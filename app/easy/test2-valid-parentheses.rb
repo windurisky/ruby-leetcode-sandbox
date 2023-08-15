@@ -14,7 +14,6 @@ def is_valid(s)
 
   # validates matching parentheses
   queue = []
-  
 
   s.each_char do |char|
     matcher = queue.first
